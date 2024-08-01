@@ -1,7 +1,11 @@
 package tustel
 
-import "github.com/gofiber/fiber/v2/log"
+import (
+	"mime/multipart"
 
-func Process() {
-	log.Info("Processing...")
+	"github.com/gofiber/fiber/v2/log"
+)
+
+func Process(file *multipart.FileHeader) {
+	log.Infof("Processing %s", file.Filename)
 }

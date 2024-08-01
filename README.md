@@ -1,2 +1,2 @@
 # Tustel
-A headless image proxy
+An image manager
